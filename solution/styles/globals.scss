@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.bg-dark-blue {
+  background-color: hsl(218, 23%, 16%);
+}
+
+.bg-grayish-blue {
+  background-color: hsl(217, 19%, 38%) !important;
+}
+
+.text-light-cyan {
+  color: hsl(193, 38%, 86%);
+}
+
+.text-neon-green {
+  color: hsl(150, 100%, 66%);
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.my-2 {
+  margin: 0.5rem 0;
+}
+
+.my-4 {
+  margin: 1.5rem 0;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 1.5rem 2rem;
+  max-width: 500px;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+  background-color: hsl(150, 100%, 66%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -25px;
+  right: 50%;
+  transform: translate(50%, 0);
+
+  // will be rendered in css as -> .btn:hover
+  &:hover {
+    background-color: hsl(150, 100%, 66%);
+    opacity: 0.8;
+  }
+}
